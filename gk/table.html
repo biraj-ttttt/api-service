@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      text-allign: center;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .hours {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: bold;
+      background-color: #e0e0e0;
+    }
+
+    .lunch {
+      font-weight: bold;
+      background-color: #f9f9f9;
+      justify-content: center;
+      text-align: center;
+    }
+
+    caption {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Time Table</caption>
+    <tr>
+      <th class="hours" rowspan="6">Hours</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>Arts</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>Arts</td>
+    </tr>
+    <tr>
+      <td colspan="5" class="lunch">LUNCH</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>project</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>Science</td>
+      <td>Maths</td>
+      <td>Project</td>
+    </tr>
+  </table>
+
+</body>
+</html>
