@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet"href="style.css">
+    <style>
+        #division1{
+            position:absolute;
+            height: 100px; ;
+            width: 60px;
+            background-color: blue;
+            left: 100px;
+            z-index: 5;
+        }
+        #division2{
+            height: 100px;
+            position:absolute;
+            width: 60px;
+            background-color: rgb(0, 225, 241);
+            left: 100px;
+            z-index: 6;
+            fon
+        }
+        .float{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            border: 2px  solid black;
+            float: right;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(),1(fr);
+            grid-template-rows: repeat(),1(fr);
+            gap:fpx;
+        }
+    </style>
+    <a href="http://"></a>
 </head>
 <body>
     <div class="main" style="background-color: aqua;" height: 50px; padding: 30px 60px; margin: 20px 50px; border: 40px 60px;>
@@ -13,6 +46,29 @@
         <img src="https://imgs.search.brave.com/BGCK5jHd-ryZZt7GLPTHO30WmcuULBO6pecioabNJCs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzQyOTI0MDg3L3Iv/aWwvZmNjOTM4LzQ5/MjU1NzUwMjEvaWxf/NjAweDYwMC40OTI1/NTc1MDIxXzNuODYu/anBn">
         <img src="https://imgs.search.brave.com/BGCK5jHd-ryZZt7GLPTHO30WmcuULBO6pecioabNJCs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzQyOTI0MDg3L3Iv/aWwvZmNjOTM4LzQ5/MjU1NzUwMjEvaWxf/NjAweDYwMC40OTI1/NTc1MDIxXzNuODYu/anBn">
         <p class="name"></p>
+        <p id="test" style ="color:black"></p>This is blank</p>
+       <p>ipsum dolor, sit amet consectetur adipisicing elit. Minima saepe quam accusantium ea fuga. Quos quibusdam fugiat beatae dolorum commodi corrupti, sed dicta blanditiis sapiente voluptatum laudantium rem esse></p>
+       <p class="main"></p>
+       <a href="https://www.google.com/search?q=chatgpt&sca_esv=c8d79add293628e4&sxsrf=AE3TifNEiCdaEzXrKpGR-kTLrNMdz9ZNVQ%3A1753588123804&source=hp&ei=m6GFaPq3Lv-hseMPlq6FmQQ&iflsig=AOw8s4IAAAAAaIWvq_xsmwHk8yw-wIolhms24SQMXAWO&ved=0ahUKEwi68cvpkNyOAxX_UGwGHRZXIUMQ4dUDCBc&uact=5&oq=chatgpt&gs_lp=Egdnd3Mtd2l6IgdjaGF0Z3B0MggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixA0jJPlAAWKo6cAh4AJABAJgBywKgAeMWqgEIMC4xMi4yLjG4AQPIAQD4AQGYAhegAvEXqAIKwgILEAAYgAQYsQMYgwHCAhEQLhiABBixAxjRAxiDARjHAcICERAuGIAEGLEDGNEDGMcBGIoFwgINEC4YgAQY0QMYxwEYCsICDRAAGIAEGLEDGIMBGArCAgcQABiABBgKwgIKEAAYgAQYsQMYCsICExAuGIAEGLEDGNEDGIMBGMcBGArCAg0QLhiABBixAxiDARgKwgIHECMYJxjqAsICChAAGAMY6gIYjwHCAgoQLhgDGOoCGI8BwgIFEC4YgATCAgsQABiABBixAxiKBcICCBAuGIAEGLEDwgIOEC4YgAQYsQMYgwEYigXCAg4QABiABBixAxiDARiKBZgDCvEF3bnSv9iPqCqSBwg4LjEwLjQuMaAHsHCyBwgwLjEwLjQuMbgHwRfCBwYyLTIxLjLIB3w&sclient=gws-wiz">chatgpt</a>
     </div>
+    <div id="division1" style="height:100px; position: absolute; width: 50px; background-color:rgb(76, 14, 190); left: 100px;z-index:5;">    
+    </div>
+    <br/>
+    <br/>
+    <div id="division2" style="height:100px; position: absolute; width: 60px; background-color:rgb(10, 207, 43); left: 100px;z-index:5;"></div>
+
+    <div class="parent">
+        <div class="flex container">
+<div class="flex container"></div>
+    <div class="flex-tem">Item</div>
+    <div class="flex-tem">Item</div>
+    <div class="flex-tem">Item</div>
+ </div>
+ <div class="grid-container">
+    <div class="gitd-item header">Header</div>
+    <div class="gitd-item main">Main Content </div>
+    <div class="gitd-item footer">Footer</div>
+    <div class="gitd-item sidebar">sidebar</div>
+ </div>
 </body>
 </html>

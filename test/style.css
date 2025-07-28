@@ -1,0 +1,32 @@
+.navbar{
+    background: red;
+   
+
+}
+
+.navbar1 img{
+    height: 4rem;
+    width: 40px;
+
+}
+.navbar2 ul{
+     position: relative;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    background-color: green;
+    justify-content: end;
+    font-size: 25px;
+     font-family: cursive;
+}
+
+
+.navbar2 ul li{
+    letter-spacing: 4px;
+    font-weight:bold
+
+    
+
+   
+}
+

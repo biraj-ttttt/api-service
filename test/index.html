@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+        <div class="navbar1">
+            <img src="../notebook.png" alt="Logo">
+        </div>
+        <div class="navbar2">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+                <li>Resue</li>
+            </ul>
+            <button onclick="changeText()">Click on me</button>
+            <p id="text">Hello Bkkss</p>
+</body>
+<script>
+    var i=0;
+    function changeText() {
+        i++;
+       document.getElementById("text").innerHTML="Hello My world".concat(i);
+    }
+</script>
+</html>
