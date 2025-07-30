@@ -1,0 +1,133 @@
+body {
+    /* Background style to mimic the image */
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); /* A very light blue to white gradient */
+    min-height: 100vh; /* Ensures the background covers the entire viewport height */
+    margin: 0;
+    display: flex; /* Use flexbox to easily center content */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    font-family: Arial, sans-serif; /* A clean, modern font */
+    color: #333;
+}
+
+.form-container {
+    /* This will be your "card" mimicking the form's appearance in the image */
+    background-color: #ffffff; /* White background for the card */
+    padding: 30px; /* Internal spacing */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft, prominent shadow */
+    width: 100%; /* Take full width of parent */
+    max-width: 500px; /* Max width to keep it from getting too wide */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 20px auto; /* Add margin top/bottom and center horizontally */
+}
+
+/* --- General Form Element Styling (from previous example, slightly refined) --- */
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+fieldset {
+    border: 1px solid #e0e0e0; /* Lighter border for fieldset */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background-color: #fdfdfd; /* Slightly different background for fieldset */
+}
+
+legend {
+    color: #555;
+    padding: 5px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+input:not([type='radio']),
+textarea,
+select {
+    width: calc(100% - 20px); /* Adjusting width to account for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:not([type='radio']):focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px; /* Minimum height for textarea */
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+    padding-right: 40px; /* More space for the custom arrow */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; /* Make button take full width if desired, or inline-block for specific width */
+    margin: 20px auto 0; /* Center button */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#result {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #cfe2f3;
+    border-radius: 8px;
+    background-color: #e7f3fa;
+    text-align: center;
+    color: #4a6a8a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Specific styling for radio button and its label to align better */
+input[type='radio'] {
+    margin-right: 5px;
+}
+
+label[for="subscribe"] {
+    display: inline-block; /* Make the label for 'subscribe' inline */
+    margin-right: 15px;
+}

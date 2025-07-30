@@ -1,72 +1,12 @@
-/* Reset some default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: "header header"
+    "sidebar main"
+    "footer foter";
+    gap: 10px;
+    height:100px;
 }
-
-body {
-    font-family: Arial, sans-serif;
+.header{
+    grid-area: ;
 }
-
-/* Navbar container */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #004080;
-    padding: 10px 30px;
-   
-}
-
-/* Logo section */
-.navbar-left img {
-    height: 70px;
-    width: auto;
-}
-
-/* Navigation links */
-.navbar-right .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-}
-
-.navbar-right .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-family: cursive;
-    transition: color 0.3s;
-}
-
-.navbar-right .nav-links li a:hover {
-    color: red;
-}
-
-.home-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f0f8ff;
-}
-
-.home-content h1 {
-    font-size: 36px;
-    color: #0a0796;
-    margin-bottom: 10px;
-}
-
-.home-content p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.home-content img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
